@@ -1,0 +1,1720 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Reyhan Desta - Videographer & Motion Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* ===== VARIABLES ===== */
+        :root {
+            --primary: #4f46e5;
+            --primary-light: #6366f1;
+            --primary-lighter: #818cf8;
+            --primary-dark: #4338ca;
+            --accent: #fbbf24;
+            --accent-hover: #fcd34d;
+            --glass: rgba(255, 255, 255, 0.08);
+            --glass-dark: rgba(0, 0, 0, 0.2);
+            --glass-border: rgba(255, 255, 255, 0.15);
+            --glass-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+            --glass-shadow-hover: 0 20px 60px rgba(0, 0, 0, 0.25);
+            --text-light: #ffffff;
+            --text-muted: #e5e7eb;
+            --text-accent: #fef3c7;
+            --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        /* ===== GLOBAL ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 30%, var(--primary-lighter) 70%, #a5b4fc 100%);
+            background-attachment: fixed;
+            color: var(--text-light);
+            line-height: 1.7;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(99, 102, 241, 0.2) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+
+        section {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 25px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 36px;
+            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-hover) 100%);
+            border-radius: 16px;
+            color: #000;
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            box-shadow: var(--glass-shadow);
+            font-size: 16px;
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transition: left 0.6s;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: var(--glass-shadow-hover);
+            background: linear-gradient(135deg, var(--accent-hover) 0%, #fde68a 100%);
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .section-title {
+            font-size: 3.5rem;
+            margin-bottom: 25px;
+            position: relative;
+            display: inline-block;
+            background: linear-gradient(135deg, var(--text-light) 0%, var(--text-accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+            width: 80px;
+            height: 5px;
+            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-hover) 100%);
+            border-radius: 3px;
+            box-shadow: 0 4px 15px rgba(251, 191, 36, 0.3);
+        }
+
+        .section-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            margin-bottom: 60px;
+            max-width: 800px;
+            line-height: 1.6;
+        }
+
+        /* ===== GLASS EFFECT UTILITIES ===== */
+        .glass {
+            background: var(--glass);
+            backdrop-filter: blur(25px) saturate(180%);
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--glass-shadow);
+        }
+
+        .glass-dark {
+            background: var(--glass-dark);
+            backdrop-filter: blur(25px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* ===== HEADER & NAVIGATION ===== */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(79, 70, 229, 0.7);
+            backdrop-filter: blur(25px) saturate(180%);
+            transition: var(--transition);
+            padding: 0 30px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        header.scrolled {
+            background: rgba(79, 70, 229, 0.9);
+            box-shadow: var(--glass-shadow);
+            padding: 0 30px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-dot {
+            color: var(--accent);
+            font-size: 2rem;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+        }
+
+        .nav-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            position: relative;
+            font-size: 1.1rem;
+            padding: 8px 0;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-hover) 100%);
+            transition: var(--transition);
+            border-radius: 2px;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+            background: var(--glass);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 10px;
+            padding: 10px;
+            transition: var(--transition);
+        }
+
+        .hamburger:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: scale(1.05);
+        }
+
+        /* ===== HERO SECTION ===== */
+        #hero {
+            padding: 180px 0 100px;
+            display: flex;
+            align-items: center;
+            min-height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(129, 140, 248, 0.3) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .hero-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+            width: 100%;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-content {
+            max-width: 700px;
+        }
+
+        .hero-content h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            line-height: 1.1;
+            background: linear-gradient(135deg, var(--text-light) 0%, var(--text-accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-content h3 {
+            font-size: 1.75rem;
+            color: var(--accent);
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .hero-content p {
+            font-size: 1.25rem;
+            margin-bottom: 40px;
+            line-height: 1.8;
+            color: var(--text-muted);
+        }
+
+        .hero-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .hero-image::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120%;
+            height: 120%;
+            background: radial-gradient(circle, rgba(251, 191, 36, 0.2) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: pulse 4s ease-in-out infinite;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 45px;
+            box-shadow: var(--glass-shadow-hover);
+            animation: float 6s ease-in-out infinite;
+            object-fit: cover;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            position: relative;
+            z-index: 2;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-25px) rotate(1deg); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.6; transform: translate(-50%, -50%) scale(1); }
+            50% { opacity: 0.8; transform: translate(-50%, -50%) scale(1.05); }
+        }
+
+        .social-links {
+            display: flex;
+            gap: 20px;
+            margin-top: 50px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 55px;
+            height: 55px;
+            background: var(--glass);
+            backdrop-filter: blur(15px);
+            border-radius: 16px;
+            color: white;
+            text-decoration: none;
+            transition: var(--transition);
+            font-size: 1.4rem;
+            border: 1px solid var(--glass-border);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .social-links a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.6s;
+        }
+
+        .social-links a:hover {
+            background: var(--accent);
+            color: #000;
+            transform: translateY(-8px) scale(1.1);
+            border-color: var(--accent);
+            box-shadow: 0 15px 30px rgba(251, 191, 36, 0.3);
+        }
+
+        .social-links a:hover::before {
+            left: 100%;
+        }
+
+        /* ===== TOOLS ===== */
+        #tools {
+            position: relative;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 35px;
+            margin-top: 50px;
+        }
+
+        .tool-item {
+            background: var(--glass);
+            backdrop-filter: blur(25px) saturate(180%);
+            border-radius: 25px;
+            padding: 40px 25px;
+            text-align: center;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--glass-shadow);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tool-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transition: left 0.6s;
+        }
+
+        .tool-item:hover {
+            transform: translateY(-12px) scale(1.05);
+            background: rgba(255, 255, 255, 0.12);
+            box-shadow: var(--glass-shadow-hover);
+            border-color: rgba(255, 255, 255, 0.25);
+        }
+
+        .tool-item:hover::before {
+            left: 100%;
+        }
+
+        .tool-item img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            margin-bottom: 25px;
+            transition: var(--transition);
+            /* FILTER DIBUANG - LOGO TAMPIL ASLI */
+        }
+
+        .tool-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .tool-item p {
+            font-weight: 600;
+            margin: 0;
+            font-size: 1.1rem;
+            color: var(--text-light);
+        }
+
+        /* ===== PROJECT DESIGN ===== */
+        #projects {
+            position: relative;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 35px;
+            margin-top: 50px;
+        }
+
+        .project-item {
+            border-radius: 25px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: var(--glass-shadow);
+            transition: var(--transition);
+            height: 320px;
+            background: var(--glass);
+            backdrop-filter: blur(15px);
+            border: 1px solid var(--glass-border);
+        }
+
+        .project-item:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: var(--glass-shadow-hover);
+        }
+
+        .project-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .project-item:hover img {
+            transform: scale(1.08);
+        }
+
+        .project-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.95));
+            padding: 30px;
+            transform: translateY(15px);
+            opacity: 0;
+            transition: var(--transition);
+            backdrop-filter: blur(10px);
+        }
+
+        .project-item:hover .project-overlay {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .project-overlay h3 {
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+            color: var(--text-light);
+        }
+
+        .project-overlay p {
+            font-size: 1rem;
+            margin: 0;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* ===== VIDEO PROFILE JURUSAN ===== */
+        #videos {
+            position: relative;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 35px;
+            margin-top: 50px;
+        }
+
+        .video-item {
+            border-radius: 25px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: var(--glass-shadow);
+            transition: var(--transition);
+            height: 250px;
+            background: var(--glass);
+            backdrop-filter: blur(15px);
+            border: 1px solid var(--glass-border);
+            cursor: pointer;
+        }
+
+        .video-item:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: var(--glass-shadow-hover);
+        }
+
+        .video-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px;
+            height: 80px;
+            background: rgba(251, 191, 36, 0.95);
+            backdrop-filter: blur(15px);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000;
+            font-size: 2rem;
+            transition: var(--transition);
+            opacity: 0;
+            border: 3px solid rgba(255, 255, 255, 0.9);
+            box-shadow: 0 8px 25px rgba(251, 191, 36, 0.4);
+        }
+
+        .video-item:hover .play-button {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+
+        .video-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.95));
+            padding: 25px;
+            backdrop-filter: blur(10px);
+        }
+
+        .video-info h3 {
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+            color: var(--text-light);
+        }
+
+        .video-info p {
+            font-size: 1rem;
+            margin: 0;
+            color: var(--text-muted);
+        }
+
+        /* ===== KONTEN KREATIF - 3:4 RATIO ===== */
+        #creative {
+            position: relative;
+        }
+
+        .creative-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .creative-item {
+            border-radius: 25px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: var(--glass-shadow);
+            transition: var(--transition);
+            background: var(--glass);
+            backdrop-filter: blur(15px);
+            border: 1px solid var(--glass-border);
+            cursor: pointer;
+            aspect-ratio: 3/4;
+        }
+
+        .creative-item:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: var(--glass-shadow-hover);
+        }
+
+        .creative-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .creative-play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70px;
+            height: 70px;
+            background: rgba(251, 191, 36, 0.95);
+            backdrop-filter: blur(15px);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000;
+            font-size: 1.6rem;
+            transition: var(--transition);
+            opacity: 0;
+            border: 2px solid rgba(255, 255, 255, 0.9);
+            box-shadow: 0 6px 20px rgba(251, 191, 36, 0.4);
+        }
+
+        .creative-item:hover .creative-play-button {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+
+        .creative-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.95));
+            padding: 25px;
+            backdrop-filter: blur(10px);
+        }
+
+        .creative-info h3 {
+            font-size: 1.2rem;
+            margin-bottom: 6px;
+            color: var(--text-light);
+        }
+
+        .creative-info p {
+            font-size: 0.95rem;
+            margin: 0;
+            color: var(--text-muted);
+        }
+
+        /* ===== ACHIEVEMENTS ===== */
+        #achievements {
+            position: relative;
+        }
+
+        .achievement-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 35px;
+            margin-top: 50px;
+        }
+
+        .achievement-item {
+            border-radius: 25px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: var(--glass-shadow);
+            transition: var(--transition);
+            height: 450px;
+            background: var(--glass);
+            backdrop-filter: blur(15px);
+            border: 1px solid var(--glass-border);
+        }
+
+        .achievement-item:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: var(--glass-shadow-hover);
+        }
+
+        .achievement-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            background: white;
+            padding: 20px;
+        }
+
+        .achievement-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(79, 70, 229, 0.95);
+            backdrop-filter: blur(15px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            text-align: center;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .achievement-item:hover .achievement-overlay {
+            opacity: 1;
+        }
+
+        .achievement-overlay h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: var(--text-light);
+        }
+
+        .achievement-overlay p {
+            font-size: 1.1rem;
+            margin: 0;
+            line-height: 1.6;
+            color: var(--text-muted);
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(25px) saturate(180%);
+            padding: 80px 0 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 60px;
+            margin-bottom: 60px;
+        }
+
+        .footer-box h3 {
+            font-size: 1.6rem;
+            margin-bottom: 30px;
+            position: relative;
+            display: inline-block;
+            color: var(--text-light);
+        }
+
+        .footer-box h3::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-hover) 100%);
+            border-radius: 2px;
+        }
+
+        .footer-box p {
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: var(--text-muted);
+        }
+
+        .footer-contact {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .footer-contact p {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        .footer-contact i {
+            color: var(--accent);
+            font-size: 1.2rem;
+            width: 25px;
+        }
+
+        .qr-codes {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .qr-code {
+            text-align: center;
+        }
+
+        .qr-code img {
+            width: 160px;
+            border-radius: 16px;
+            margin-bottom: 15px;
+            box-shadow: var(--glass-shadow);
+            border: 2px solid var(--glass-border);
+        }
+
+        .qr-code p {
+            font-size: 1rem;
+            margin: 0;
+            color: var(--text-muted);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 50px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 1rem;
+            color: var(--text-muted);
+        }
+
+        /* ===== RESPONSIVE DESIGN ===== */
+        @media (max-width: 1200px) {
+            .hero-content h1 {
+                font-size: 3.5rem;
+            }
+            
+            .section-title {
+                font-size: 3rem;
+            }
+            
+            .container {
+                max-width: 1200px;
+                padding: 0 25px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                gap: 60px;
+                text-align: center;
+            }
+            
+            .hero-content {
+                max-width: 100%;
+            }
+            
+            .hero-content h1 {
+                font-size: 3rem;
+            }
+            
+            .hero-content h3 {
+                font-size: 1.5rem;
+            }
+            
+            .hero-image img {
+                max-width: 400px;
+            }
+            
+            .social-links {
+                justify-content: center;
+            }
+            
+            .section-title {
+                text-align: center;
+            }
+            
+            .section-title::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .section-subtitle {
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .nav-links {
+                gap: 25px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 15px 0;
+            }
+            
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background: rgba(79, 70, 229, 0.95);
+                backdrop-filter: blur(25px) saturate(180%);
+                flex-direction: column;
+                align-items: center;
+                padding: 40px 0;
+                transform: translateY(-100%);
+                opacity: 0;
+                transition: var(--transition);
+                box-shadow: var(--glass-shadow);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                gap: 0;
+            }
+            
+            .nav-links.active {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            
+            .nav-links li {
+                margin: 20px 0;
+            }
+            
+            .hamburger {
+                display: block;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-content h3 {
+                font-size: 1.3rem;
+            }
+            
+            .project-grid,
+            .video-grid,
+            .creative-grid,
+            .achievement-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .tools-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 25px;
+            }
+            
+            .section-title {
+                font-size: 2.5rem;
+            }
+            
+            .section-subtitle {
+                font-size: 1.1rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                padding: 0 20px;
+            }
+            
+            section {
+                padding: 80px 0;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero-content h3 {
+                font-size: 1.2rem;
+            }
+            
+            .hero-content p {
+                font-size: 1.1rem;
+            }
+            
+            .btn {
+                padding: 14px 28px;
+                font-size: 1rem;
+            }
+            
+            .tools-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+            
+            .tool-item {
+                padding: 30px 20px;
+            }
+            
+            .tool-item img {
+                width: 60px;
+                height: 60px;
+            }
+            
+            .social-links a {
+                width: 50px;
+                height: 50px;
+                font-size: 1.2rem;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .project-grid,
+            .creative-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .section-subtitle {
+                font-size: 1rem;
+            }
+            
+            .project-item,
+            .video-item {
+                height: 280px;
+            }
+            
+            .achievement-item {
+                height: 380px;
+            }
+            
+            .creative-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header id="header">
+        <div class="navbar">
+            <a href="#" class="logo">
+                Reyhan Desta Pratama<span class="logo-dot">.</span>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#projects">Design</a></li>
+                <li><a href="#videos">Video Profile</a></li>
+                <li><a href="#creative">Konten Kreatif</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1>Reyhan Desta Pratama</h1>
+                    <h3>Videographer • Motion Designer • Video Editor</h3>
+                    <p>
+                        Halo! kenalin namaku Reyhan, bukan ahli tapi cukup mahir dalam pembuatan video profile, motion graphics, 
+                        dan konten kreatif. Dengan pengalaman membuat video untuk berbagai jurusan SMK 
+                        dan event kampus seperti BEM FISIP Unnes.
+                    </p>
+                    <a href="#videos" class="btn glass">
+                        <i class="fas fa-play-circle"></i>
+                        Lihat Karya Video Saya
+                    </a>
+                    
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/reyhannndp?igsh=MXZrMTRsaHFuMmd4MA%3D%3D&utm_source=qr" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@reyhanndp?is_from_webapp=1&sender_device=pc" target="_blank" title="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://wa.me/qr/IHGXLMRJC67KA1" target="_blank" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <img src="img/profil ku han.png" alt="Foto Reyhan Desta">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOOLS -->
+    <section id="tools">
+        <div class="container">
+            <h2 class="section-title">Tools yang Sering Digunakan</h2>
+            <p class="section-subtitle">Software dan aplikasi yang saya kuasai untuk produksi video, design hingga motion design.</p>
+
+            <div class="tools-grid">
+                <div class="tool-item glass">
+                    <img src="img/premiere pro logo.png" alt="Premiere Pro">
+                    <p>Premiere Pro</p>
+                </div>
+                <div class="tool-item glass">
+                    <img src="img/after effect logo.png" alt="After Effects">
+                    <p>After Effects</p>
+                </div>
+                <div class="tool-item glass">
+                    <img src="img/figma logo.png" alt="Figma">
+                    <p>Figma</p>
+                </div>
+                <div class="tool-item glass">
+                    <img src="img/5968472.png" alt="Illustrator">
+                    <p>Illustrator</p>
+                </div>
+                <div class="tool-item glass">
+                    <img src="img/canva logo.png" alt="Canva">
+                    <p>Canva</p>
+                </div>
+                <div class="tool-item glass">
+                    <img src="img/capcut logo.png" alt="CapCut">
+                    <p>CapCut</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT DESIGN -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Project Desain Saya</h2>
+            <p class="section-subtitle">Beberapa karya desain grafis dan visual branding yang telah saya buat semasa SMK hingga kuliah.</p>
+
+            <div class="project-grid">
+                <div class="project-item">
+                    <img src="img/design project ekstrakurikuler.png" alt="Design Ekstrakurikuler">
+                    <div class="project-overlay">
+                        <h3>Feed Project Design</h3>
+                        <p>Ekstrakurikuler Design SMK</p>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="img/design project isntansi SMK.png" alt="Design Instansi SMK">
+                    <div class="project-overlay">
+                        <h3>Feed Project Design</h3>
+                        <p>Feed Instagram Instansi SMK BTB Juwana</p>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="img/design project pribadi.png" alt="Design Pribadi">
+                    <div class="project-overlay">
+                        <h3>Design Pribadi</h3>
+                        <p>Design untuk keperluan pribadi</p>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="img/project design eksekutif muda.png" alt="Design Eksekutif Muda">
+                    <div class="project-overlay">
+                        <h3>Project Design Magang BEM FISIP</h3>
+                        <p>Design Eksekutif Muda</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIDEO PROFILE JURUSAN -->
+    <section id="videos">
+        <div class="container">
+            <h2 class="section-title">Video Profile Jurusan dan Kreatif</h2>
+            <p class="section-subtitle">
+                Project video profile untuk berbagai jurusan di SMK. Klik video nya untuk melihat hasil editing dan teknik videography ku!.
+            </p>
+
+            <div class="video-grid">
+                <!-- VIDEO 1 -->
+                <div class="video-item" onclick="openVideo('https://youtu.be/BY27Wcr_DFo')">
+                    <img src="https://img.youtube.com/vi/BY27Wcr_DFo/maxresdefault.jpg" alt="Video Profile Teknik Sepeda Motor">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="video-info">
+                        <h3>Profile Teknik Sepeda Motor</h3>
+                        <p>Video profile jurusan TSM</p>
+                    </div>
+                </div>
+
+                <!-- VIDEO 2 -->
+                <div class="video-item" onclick="openVideo('https://youtu.be/mbaAZizZWFc')">
+                    <img src="https://img.youtube.com/vi/mbaAZizZWFc/maxresdefault.jpg" alt="Video Profile Teknik Elektronika Industri">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="video-info">
+                        <h3>Profile Teknik Elektronika</h3>
+                        <p>Video profile jurusan TEI</p>
+                    </div>
+                </div>
+
+                <!-- VIDEO 3 -->
+                <div class="video-item" onclick="openVideo('https://youtu.be/WHfc_NX1Jfc')">
+                    <img src="https://img.youtube.com/vi/WHfc_NX1Jfc/maxresdefault.jpg" alt="Video Profile Teknik Pemesinan">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="video-info">
+                        <h3>Profile Teknik Pemesinan</h3>
+                        <p>Video profile jurusan TPM</p>
+                    </div>
+                </div>
+
+                <!-- VIDEO 4 -->
+                <div class="video-item" onclick="openVideo('https://youtu.be/OC8M_CPKQnY')">
+                    <img src="https://img.youtube.com/vi/OC8M_CPKQnY/maxresdefault.jpg" alt="Video Profile Desain Pemodelan">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="video-info">
+                        <h3>Profile Desain Pemodelan</h3>
+                        <p>Video profile jurusan DPIB</p>
+                    </div>
+                </div>
+
+                <!-- VIDEO 5 -->
+                <div class="video-item" onclick="openVideo('https://youtu.be/OvRv0dfeCmE')">
+                    <img src="https://img.youtube.com/vi/OvRv0dfeCmE/maxresdefault.jpg" alt="Video Profile Teknik Kendaraan Ringan">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="video-info">
+                        <h3>Profile Teknik Kendaraan Ringan</h3>
+                        <p>Video profile jurusan TKR</p>
+                    </div>
+                </div>
+
+                <!-- VIDEO 6 -->
+                <div class="video-item" onclick="openVideo('https://youtu.be/N5dQUimh0XY')">
+                    <img src="https://img.youtube.com/vi/N5dQUimh0XY/maxresdefault.jpg" alt="Podcast Ramadhan SMK BTB">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="video-info">
+                        <h3>Podcast Ramadhan 2025</h3>
+                        <p>Konten spesial Ramadhan SMK BTB</p>
+                    </div>
+                </div>
+
+                <!-- VIDEO 7 -->
+                <div class="video-item" onclick="openVideo('https://youtu.be/IPysR1b8q1k?si=Wy-DXDjavuL6_GMt')">
+                    <img src="https://i.ytimg.com/vi/IPysR1b8q1k/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGH8gUygfMA8=&rs=AOn4CLDm2rU2y08G8hIwfToWxI7AHneDpQ" alt="Video Profile Tambahan">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="video-info">
+                        <h3>Project Video podcast alumni JIAEC</h3>
+                        <p>Video kreatif podcast alumni</p>
+                    </div>
+                </div>
+                <div class="video-item" onclick="openVideo('https://youtu.be/-jwAASGGupw')">
+                    <img src="img/-jwAASGGupw-HD.jpg" alt="Video Profile Tambahan">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="video-info">
+                        <h3>Project Video kreasi angkatan</h3>
+                        <p>Video kreasi angkatan smk btb 2025</p>
+                    </div>
+            </div>
+            <div class="video-item" onclick="openVideo('https://youtu.be/dgvnBXaEajc?si=cM86g-Vqzlvl3kEy')">
+                    <img src="img/dgvnBXaEajc-HD.jpg">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="video-info">
+                        <h3>Project Video podcast ramadhan</h3>
+                        <p>Video podcast ramadhan smk btb 2025</p>
+                    </div>
+        </div>
+    </section>
+
+    <!-- KONTEN KREATIF & ANIMASI - 14 VIDEO 3:4 -->
+    <section id="creative">
+        <div class="container">
+            <h2 class="section-title">Konten Kreatif & Animasi</h2>
+            <p class="section-subtitle">Motion graphics, video tron animasi, dan konten kreatif untuk berbagai event.</p>
+
+            <div class="creative-grid">
+                <!-- VIDEO 1 -->
+                <div class="creative-item" onclick="openLink('https://www.instagram.com/reel/DPgJ5NagUrQ/')">
+                    <img src="img/dhyo haw animasi fith fest.png" alt="Animasi Guest Star Fith Fest 2025">
+                    <div class="creative-play-button">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="creative-info">
+                        <h3>Animasi Guest Star Fith Fest</h3>
+                        <p>Instagram Reel - Part 1</p>
+                    </div>
+                </div>
+
+                <!-- VIDEO 2 -->
+                <div class="creative-item" onclick="openLink('https://www.instagram.com/reel/DPMCidQk-lq/')">
+                    <img src="img/thumb 1 great maters.png" alt="Animasi Guest Star Fith Fest 2025">
+                    <div class="creative-play-button">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="creative-info">
+                        <h3>Animasi Guest Star Fith Fest</h3>
+                        <p>Instagram Reel - Part 2</p>
+                    </div>
+                </div>
+
+                <!-- VIDEO 3 -->
+                <div class="creative-item" onclick="openLink('https://drive.google.com/file/d/1SSFltf9n_D2c5RPWNTOHUcNHflJwUUxB/view?usp=sharing')">
+                    <img src="img/fith fest vid trone img.png" alt="Animasi Video Tron Fith Fest 2025">
+                    <div class="creative-play-button">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="creative-info">
+                        <h3>Animasi Video Tron Fith Fest</h3>
+                        <p>Video tron fith fest 2025</p>
+                    </div>
+                </div>
+
+                <!-- VIDEO 4 -->
+                <div class="creative-item" onclick="openLink('https://drive.google.com/file/d/14GNU0-H2K8Fj7ZQCMQ27qLyRzGMr0Plz/view?usp=sharing')">
+                    <img src="img/skala img vid tron.png" alt="Animasi Video Tron Skala 2025">
+                    <div class="creative-play-button">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="creative-info">
+                        <h3>Animasi Video Tron Skala</h3>
+                        <p>Video tron skala 2025</p>
+                    </div>
+                </div>
+
+                <!-- VIDEO 5 -->
+                <div class="creative-item" onclick="openLink('https://drive.google.com/file/d/1k6zry4AUy_gvtdUVX5lu--4Nli3NfD56/view?usp=sharing')">
+                    <img src="img/sinergi ig.png" alt="Animasi Video Tron Sinergi 2025">
+                    <div class="creative-play-button">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="creative-info">
+                        <h3>Animasi Video Tron Sinergi</h3>
+                        <p>Video tron sinergi 2025</p>
+                    </div>
+                </div>
+
+                <!-- VIDEO 6-14 (Instagram Reels) -->
+                <div class="creative-item" onclick="openLink('https://www.instagram.com/reel/DHgXmHJSpJg/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==')">
+                    <img src="img/486213325_18058297286321065_2842866654265141615_n.jpg" alt="Instagram Reel 6">
+                    <div class="creative-play-button">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="creative-info">
+                        <h3>Konten Podcast Ramadhan</h3>
+                        <p>Instagram reel preview</p>
+                    </div>
+                </div>
+
+                <!-- VIDEO 7-14 dilanjutkan dengan pola yang sama -->
+                <div class="creative-item" onclick="openLink('https://www.instagram.com/reel/DHMBdaYS6bY/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==')">
+                    <img src="img/484368752_18057253586321065_6022606936656336805_n.jpg" alt="Instagram Reel 7">
+                    <div class="creative-play-button">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="creative-info">
+                        <h3>Konten ramadhan series SMK BTB</h3>
+                        <p>Instagram Reel konten</p>
+                    </div>
+                </div>
+
+                <!-- VIDEO 8 -->
+                <div class="creative-item" onclick="openLink('https://www.instagram.com/reel/DHG9gLeSbnv/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==')">
+                    <img src="img/484487949_18057253787321065_197219957179973033_n.jpg" alt="Instagram Reel 8">
+                    <div class="creative-play-button">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="creative-info">
+                        <h3>Konten ramadhan series SMK BTB</h3>
+                        <p>Instagram Reel konten</p>
+                    </div>
+                </div>
+
+                <!-- VIDEO 9 -->
+                <div class="creative-item" onclick="openLink('https://www.instagram.com/reel/DHCigq1yefG/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==')">
+                    <img src="img/482968875_18056855498321065_4606005036130299063_n.jpg" alt="Instagram Reel 9">
+                    <div class="creative-play-button">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="creative-info">
+                        <h3>Konten ramadhan series SMK BTB</h3>
+                        <p>Instagram Reel konten</p>
+                    </div>
+                </div>
+
+                <!-- VIDEO 10 -->
+                <div class="creative-item" onclick="openLink('https://www.instagram.com/reel/DEETqV2pszt/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==')">
+                    <img src="img/470907849_876750824640836_7460725007745360230_n.jpg" alt="Instagram Reel 10">
+                    <div class="creative-play-button">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="creative-info">
+                        <h3>Konten Kreatif event basket SMK</h3>
+                        <p>Instagram Reel konten wawancara</p>
+                    </div>
+                </div>
+
+                <!-- VIDEO 11 -->
+                <div class="creative-item" onclick="openLink('https://www.instagram.com/reel/DDvh3e7z_J8/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==')">
+                    <img src="img/pak nur mulmed.jpg" alt="Instagram Reel 11">
+                    <div class="creative-play-button">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="creative-info">
+                        <h3>Konten Kreatif multimedia event HUT</h3>
+                        <p>Instagram Reel konten kreatif</p>
+                    </div>
+                </div>
+
+                <!-- VIDEO 12 -->
+                <div class="creative-item" onclick="openLink('https://www.instagram.com/reel/DMKJGZ0upkB/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==')">
+                    <img src="img/520494604_17989568015818748_4125576194935787024_n.jpg" alt="Instagram Reel 12">
+                    <div class="creative-play-button">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="creative-info">
+                        <h3>Konten Kreatif MPLS 3D after effect</h3>
+                        <p>Instagram Reel konten kreatif </kbd></p>
+                    </div>
+                </div>
+
+                <!-- VIDEO 13 -->
+                <div class="creative-item" onclick="openLink('https://www.instagram.com/reel/DEDGm8HufRQ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==')">
+                    <img src="img/download.jpg" alt="Instagram Reel 13">
+                    <div class="creative-play-button">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="creative-info">
+                        <h3>Konten Kreatif </h3>
+                        <p>Instagram Reel</p>
+                    </div>
+                </div>
+
+                <!-- VIDEO 14 -->
+                <div class="creative-item" onclick="openLink('https://www.instagram.com/reel/DG52tXLSTNC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==')">
+                    <img src="img/483154261_18056479106321065_5668174684636544036_n.jpg" alt="Instagram Reel 14">
+                    <div class="creative-play-button">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="creative-info">
+                        <h3>Konten Kreatif </h3>
+                        <p>Instagram Reel</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements">
+        <div class="container">
+            <h2 class="section-title">Pencapaian & Sertifikasi</h2>
+            <p class="section-subtitle">
+                Berbagai pencapaian, piagam penghargaan, dan sertifikasi dalam berbagai bidang semasa SMK hingga kuliah.
+            </p>
+
+            <div class="achievement-grid">
+                <!-- PIAGAM 1 -->
+                <div class="achievement-item">
+                    <img src="img/pararel 1 eligible 1 SMK BTB Juwana Reyhan.jpg" alt="Eligible 1 SMK BTB Juwana">
+                    <div class="achievement-overlay">
+                        <h3>Eligible 1 SMK BTB Juwana</h3>
+                        <p>Eligible 1 SMK BTB Juwana Tahun Ajaran 2025</p>
+                    </div>
+                </div>
+
+                <!-- PIAGAM 2 -->
+                <div class="achievement-item">
+                    <img src="img/Peringkat 1 konsentrasi keahlian otomotif.jpg" alt="Peringkat 1 Konsentrasi Keahlian Otomotif">
+                    <div class="achievement-overlay">
+                        <h3>Peringkat 1 Konsentrasi Keahlian Otomotif</h3>
+                        <p>Teknik Kendaraan Ringan Otomotif tahun 2025</p>
+                    </div>
+                </div>
+
+                <!-- PIAGAM 3 -->
+                <div class="achievement-item">
+                    <img src="img/REYHAN DESTA PRATAMA SERTIFIKAT JUARA 2 UNY (1) (1).png" alt="Juara 2 LKTI FMIPA UNY">
+                    <div class="achievement-overlay">
+                        <h3>Juara 2 LKTI FMIPA UNY tahun 2024</h3>
+                        <p>Lomba Karya Tulis Ilmiah FMIPA UNY 2024</p>
+                    </div>
+                </div>
+
+                <!-- PIAGAM 4 -->
+                <div class="achievement-item">
+                    <img src="img/Sertifikat Juara 1 Komjela UMK_page-0001 (1).jpg" alt="Juara 1 Business Plan Competition">
+                    <div class="achievement-overlay">
+                        <h3>Juara 1 Business Plan Competition</h3>
+                        <p>Kompetisi Business Plan Creative Competition UMK 2023</p>
+                    </div>
+                </div>
+
+                <!-- PIAGAM 5 -->
+                <div class="achievement-item">
+                    <img src="img/Screenshot 2025-02-11 204034.png" alt="Juara 2 Krenova Pati">
+                    <div class="achievement-overlay">
+                        <h3>Juara 2 Krenova Pati</h3>
+                        <p>Juara 2 Krenova Pati Innovation award 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-box">
+                    <h3>Tentang Saya</h3>
+                    <p>Mungkin ini belum hasil terbaiku, namun aku suka belajar-belajar dan terus belajar agar aku menjadi lebih baik dalam mendesain atau editing di video, see ya
+                        catatan : desain di atas merupakan segelintir desain yang pernah ku buat, desain lainya belum ku masukin
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/reyhannndp?igsh=MXZrMTRsaHFuMmd4MA%3D%3D&utm_source=qr" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@reyhanndp?is_from_webapp=1&sender_device=pc" target="_blank" title="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://wa.me/qr/IHGXLMRJC67KA1" target="_blank" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-box">
+                    <h3>Hubungi Saya</h3>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-envelope"></i> pratamareyhan552@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> 0895353814600</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Pati, Indonesia</p>
+                    </div>
+                </div>
+                
+                <div class="footer-box">
+                    <h3>Scan QR Code</h3>
+                    <div class="qr-codes">
+                        <div class="qr-code">
+                            <img src="img/instagram scan qr.png" alt="QR Instagram">
+                            <p>Instagram</p>
+                        </div>
+                        <div class="qr-code">
+                            <img src="img/wa qr.png" alt="QR WhatsApp">
+                            <p>WhatsApp</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Reyhan Desta Pratama. Ilmu Komunikasi UNNES 25. | Portofolio hanikom</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const icon = hamburger.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                const icon = hamburger.querySelector('i');
+                icon.classList.add('fa-bars');
+                icon.classList.remove('fa-times');
+            });
+        });
+        
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Function to open YouTube video
+        function openVideo(url) {
+            window.open(url, '_blank');
+        }
+
+        // Function to open external links
+        function openLink(url) {
+            window.open(url, '_blank');
+        }
+
+        // Add loading animation
+        window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+        });
+    </script>
+</body>
+</html>
